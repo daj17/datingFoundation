@@ -1,0 +1,16 @@
+
+<!-- Authenticate session -->
+getUrlVars: function() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+      function(m,key,value) {
+          vars[key] = value;
+      });
+      return vars;
+ }
+var jwt = getUrlVars()[“jwt”]; // the JWT
+
+
+setHeaders: function(appId, jwt){
+      return {"x-api-key":appId, "JWT": jwt};
+}

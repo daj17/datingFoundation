@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EditDescriptionCell" rowHeight="100" id="KGk-i7-Jjw" customClass="EditDescriptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Keep your bio fun and original to interest those around you!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LHb-3U-3sI">
+                        <rect key="frame" x="31" y="33" width="258" height="58.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58.5" id="euX-eF-PcD"/>
+                        </constraints>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Bio 📝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-H7-LHs">
+                        <rect key="frame" x="42" y="14" width="237" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="LD6-ug-OCk"/>
+                            <constraint firstAttribute="height" constant="31" id="Rng-R5-eJV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Rng-R5-eJV"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LHb-3U-3sI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="23" id="2ho-HP-5Jg"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="7iv-Pz-xj0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="1.5" id="DU9-Hp-zis"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="-2.5" id="EpL-u0-CNc"/>
+                    <constraint firstItem="LHb-3U-3sI" firstAttribute="top" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="-3" id="Gpk-zM-mur"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="1.5" id="IlT-4d-o9W"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="0.5" id="Mfc-Yv-KBj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="4.5" id="Pnd-2R-BdB"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Som-OT-S1n"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="TDU-vd-cyA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="1.5" id="Xih-Kd-yRy"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="f7D-d2-4DF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LHb-3U-3sI" secondAttribute="bottom" id="iD9-Xh-ciE"/>
+                    <constraint firstItem="LHb-3U-3sI" firstAttribute="top" secondItem="W8l-H7-LHs" secondAttribute="bottom" constant="2" id="kWS-ak-ab1"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="nxG-R2-SOu"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="ra2-Mk-QDb"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="34" id="wf4-L8-QNh"/>
+                    <constraint firstItem="W8l-H7-LHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="34" id="z8E-a0-iJd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7iv-Pz-xj0"/>
+                        <exclude reference="DU9-Hp-zis"/>
+                        <exclude reference="EpL-u0-CNc"/>
+                        <exclude reference="IlT-4d-o9W"/>
+                        <exclude reference="Mfc-Yv-KBj"/>
+                        <exclude reference="Pnd-2R-BdB"/>
+                        <exclude reference="TDU-vd-cyA"/>
+                        <exclude reference="Xih-Kd-yRy"/>
+                        <exclude reference="f7D-d2-4DF"/>
+                        <exclude reference="nxG-R2-SOu"/>
+                        <exclude reference="ra2-Mk-QDb"/>
+                        <exclude reference="z8E-a0-iJd"/>
+                        <exclude reference="kWS-ak-ab1"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="W8l-H7-LHs" secondAttribute="trailing" constant="41" id="KOV-uG-raV"/>
+                <constraint firstAttribute="trailing" secondItem="W8l-H7-LHs" secondAttribute="trailing" constant="41" id="hu5-7B-0pp"/>
+                <constraint firstAttribute="trailing" secondItem="LHb-3U-3sI" secondAttribute="trailing" constant="31" id="u7f-Fv-UwP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hu5-7B-0pp"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="descriptionLabel" destination="W8l-H7-LHs" id="vs3-n3-ooU"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="247"/>
+        </tableViewCell>
+    </objects>
+</document>

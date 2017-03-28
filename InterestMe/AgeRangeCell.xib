@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgeRangeCell" rowHeight="74" id="KGk-i7-Jjw" customClass="AgeRangeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM6-kz-qLh">
+                        <rect key="frame" x="14" y="8" width="83" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="DTu-dX-BhD"/>
+                            <constraint firstAttribute="height" constant="21" id="ikL-gB-f8H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iL-4a-d45">
+                        <rect key="frame" x="233" y="8" width="73" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="5pD-6q-dVY"/>
+                            <constraint firstAttribute="height" constant="21" id="IQa-et-gvJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7A6-G5-JP4" customClass="NMRangeSlider">
+                        <rect key="frame" x="8" y="37" width="304" height="28"/>
+                        <color key="backgroundColor" red="0.26644312419999999" green="1" blue="0.2003374661" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="h3q-H6-B5J"/>
+                        </constraints>
+                        <connections>
+                            <action selector="sliderChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="4xR-7G-3zf"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7A6-G5-JP4" firstAttribute="top" secondItem="oM6-kz-qLh" secondAttribute="bottom" constant="8" id="DhO-pL-TFE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9iL-4a-d45" secondAttribute="trailing" constant="6" id="Gfy-fb-7j2"/>
+                    <constraint firstAttribute="topMargin" secondItem="oM6-kz-qLh" secondAttribute="top" id="Ow5-4X-VmU"/>
+                    <constraint firstAttribute="topMargin" secondItem="9iL-4a-d45" secondAttribute="top" id="ZFg-hk-8FA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7A6-G5-JP4" secondAttribute="trailing" id="aDC-fQ-09G"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7A6-G5-JP4" secondAttribute="bottom" constant="0.5" id="bC5-Sw-Iwa"/>
+                    <constraint firstItem="oM6-kz-qLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="bLP-jl-8UM"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="7A6-G5-JP4" secondAttribute="leading" id="bz0-cV-c0a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageRangeLabel" destination="9iL-4a-d45" id="VFp-Ee-KIf"/>
+                <outlet property="ageSlider" destination="7A6-G5-JP4" id="Nka-CG-9se"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="254"/>
+        </tableViewCell>
+    </objects>
+</document>

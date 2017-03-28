@@ -1,0 +1,14 @@
+//
+//  NoPeoplePlayingCell.h
+//  InterestMe
+//
+//  Created by Portanos on 7/20/16.
+//  Copyright © 2016 ChimpchatLLC. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface NoPeoplePlayingCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UITextView *noPeopleNearbyTextView;
+
+@end

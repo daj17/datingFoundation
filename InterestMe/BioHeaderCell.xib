@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BioHeaderCell" id="yzX-yi-FbR" customClass="BioHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzX-yi-FbR" id="KZU-Ns-zqK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylv-dQ-YZL">
+                        <rect key="frame" x="17" y="17" width="287" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="bkH-lk-JsR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ylv-dQ-YZL" secondAttribute="trailing" constant="6" id="8fN-zn-XxU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ylv-dQ-YZL" secondAttribute="trailing" id="Ch7-DS-dMl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ylv-dQ-YZL" secondAttribute="trailing" constant="8" id="HC3-h2-EIq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ylv-dQ-YZL" secondAttribute="bottom" constant="-7.5" id="Wxa-Ej-NI9"/>
+                    <constraint firstItem="Ylv-dQ-YZL" firstAttribute="leading" secondItem="KZU-Ns-zqK" secondAttribute="leadingMargin" constant="9" id="YLe-y1-V1b"/>
+                    <constraint firstItem="Ylv-dQ-YZL" firstAttribute="centerX" secondItem="KZU-Ns-zqK" secondAttribute="centerX" id="bTR-AO-Xe1"/>
+                    <constraint firstItem="Ylv-dQ-YZL" firstAttribute="leading" secondItem="KZU-Ns-zqK" secondAttribute="leadingMargin" constant="11" id="gV9-6W-3Bh"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Ylv-dQ-YZL" secondAttribute="leading" id="pWf-dd-fOR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ylv-dQ-YZL" secondAttribute="bottom" constant="-7.5" id="qHW-he-NdH"/>
+                    <constraint firstItem="Ylv-dQ-YZL" firstAttribute="leading" secondItem="KZU-Ns-zqK" secondAttribute="leadingMargin" constant="6" id="stP-HQ-UNk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8fN-zn-XxU"/>
+                        <exclude reference="Ch7-DS-dMl"/>
+                        <exclude reference="gV9-6W-3Bh"/>
+                        <exclude reference="pWf-dd-fOR"/>
+                        <exclude reference="qHW-he-NdH"/>
+                        <exclude reference="stP-HQ-UNk"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

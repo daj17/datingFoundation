@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addNewPhotoTableViewCell" rowHeight="76" id="KGk-i7-Jjw" customClass="addNewPhotoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bzG-we-xCr">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Ddx-hR-FHV"/>
+                            <constraint firstAttribute="width" constant="60" id="mv8-ih-EcG"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Add a second photo here!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SY-Gz-vJG">
+                        <rect key="frame" x="85" y="22" width="279" height="30.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30.5" id="WCZ-qd-ZAV"/>
+                        </constraints>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bzG-we-xCr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8wf-uq-G6V"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="bzG-we-xCr" secondAttribute="leading" id="920-F8-ODE"/>
+                    <constraint firstItem="1SY-Gz-vJG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M9R-EY-vRj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1SY-Gz-vJG" secondAttribute="trailing" constant="8" id="T4V-cQ-Msn"/>
+                    <constraint firstAttribute="topMargin" secondItem="bzG-we-xCr" secondAttribute="top" id="Um4-lw-OsY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bzG-we-xCr" secondAttribute="bottom" constant="-0.5" id="dhd-9k-ZcK"/>
+                    <constraint firstItem="1SY-Gz-vJG" firstAttribute="leading" secondItem="bzG-we-xCr" secondAttribute="trailing" constant="17" id="lmT-O6-p5B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainImageView" destination="bzG-we-xCr" id="JTh-UF-Wpz"/>
+                <outlet property="mainTextView" destination="1SY-Gz-vJG" id="zac-Vk-smR"/>
+            </connections>
+            <point key="canvasLocation" x="391" y="344"/>
+        </tableViewCell>
+    </objects>
+</document>

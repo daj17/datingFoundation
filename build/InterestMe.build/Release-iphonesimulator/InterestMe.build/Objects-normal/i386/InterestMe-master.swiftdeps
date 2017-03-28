@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "3cff5e6cd6578c1586b9925040d57fd5"
+build_time: [525219360, 891371000]
+inputs:
+  "/Users/Portanos/Documents/Campus Whiteboard/InterestMe/InterestMe/ADVSegmentedControl.swift": [523402006, 0]

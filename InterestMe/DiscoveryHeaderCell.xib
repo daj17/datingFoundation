@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoveryHeaderCell" id="lIb-hh-dor" customClass="DiscoveryHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lIb-hh-dor" id="u9P-tW-OJD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discovery Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-Kb-n4c">
+                        <rect key="frame" x="17" y="17" width="287" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="RGe-pf-T49"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sei-Kb-n4c" firstAttribute="centerX" secondItem="u9P-tW-OJD" secondAttribute="centerX" id="0Tu-3I-LcK"/>
+                    <constraint firstItem="Sei-Kb-n4c" firstAttribute="leading" secondItem="u9P-tW-OJD" secondAttribute="leadingMargin" constant="9" id="2Ip-Gp-aun"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sei-Kb-n4c" secondAttribute="bottom" constant="-7.5" id="9Xp-7P-cDe"/>
+                    <constraint firstItem="Sei-Kb-n4c" firstAttribute="leading" secondItem="u9P-tW-OJD" secondAttribute="leadingMargin" constant="11" id="KEb-gK-yVD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sei-Kb-n4c" secondAttribute="trailing" constant="8" id="Rs5-Ie-Tq5"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Sei-Kb-n4c" secondAttribute="leading" id="Utk-pE-Z8o"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sei-Kb-n4c" secondAttribute="bottom" constant="-7.5" id="cCm-Wy-dd8"/>
+                    <constraint firstItem="Sei-Kb-n4c" firstAttribute="leading" secondItem="u9P-tW-OJD" secondAttribute="leadingMargin" constant="6" id="iKU-uZ-WbK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sei-Kb-n4c" secondAttribute="trailing" id="j6G-LP-WfH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sei-Kb-n4c" secondAttribute="trailing" constant="6" id="lDe-4c-M1r"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="cCm-Wy-dd8"/>
+                        <exclude reference="Utk-pE-Z8o"/>
+                        <exclude reference="j6G-LP-WfH"/>
+                        <exclude reference="lDe-4c-M1r"/>
+                        <exclude reference="KEb-gK-yVD"/>
+                        <exclude reference="iKU-uZ-WbK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+Written by djax, begun June 7 2016
+
+Within this file is the general procedure for matching people up.
+
+We only ever show you people with at least 1 common interest.
+
+-----------------------------------------------------------------
+
+A question then arises:
+
+Given the variables:
+
+NUM_COMMON_INTERESTS=x=?, where x>0
+
+and
+
+MATCHED_ME_ALREADY=BOOL=?
+
+How should we decide to sort our the users shown to a person??
+
+---- PROS SHOWING ONLY NUM_COMMON_INTERESTS first: ----
+
+"Show me only the people most similar," don't waste my time with people who don't have the maximum number of common interests I can see.
+
+----  PROS SHOWING MATCHED_ME_ALREADY, either on equal grounds to NUM_COMMON_INTERSTS, OR PRIORITIZED: ----
+
+I'll get more matches when I start out swiping (This will keep people engaged).
+
+-----------------------------------------------------------------
+
+VERDICT (SUBJECT TO CHANGE):
+
+We should show (MATCHED_ME_ALREADY=YES) profiles first, random order.
+
+Then we should show NUM_COMMON_INTERESTS, in random order.
+
+This should be fine to get started with (and then we a ton of people join you can optimize this). At the beginning, though, it shouldn't make a huge amount of difference.
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
